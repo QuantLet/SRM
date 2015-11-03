@@ -6,9 +6,9 @@
 
 ```yaml
 
-Name of QuantLet : SRM_fig2.14
+Name of Quantlet : SRM_fig2.14
 
-Published in : SRM
+Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
 Description : 'Produces the QQ plots for four simulated samples of 
 N(0,1), N(5,1), N(0,9) and N(5,9). QQ-plots compare empirical 
@@ -20,21 +20,19 @@ graphical representation'
 
 See also : 
 
-Author : Wellisch
+Author : Ulrich Wellisch
 
 Submitted :
 
-Datafile : 
-
-Example :
-- 'Q-Q-Normal-Plots for four simulated samples of N(0,1), N(5,1), 
-N(0,9) and N(5,9).'
+Example : 'Q-Q-Normal-Plots for four simulated samples of 
+N(0,1), N(5,1), N(0,9) and N(5,9).'
 
 ```
 
 ![Picture1](SRM_fig2.14.png)
 
 ```R
+
 ## clear history
 rm(list = ls(all = TRUE))
 graphics.off()
@@ -52,18 +50,19 @@ z = rnorm(100, mean = 5, sd = 3)
 
 par(mfrow = c(2, 2))
 qqnorm(w, main = "Normal Q-Q-Plot der Stichprobe w", xlab = "theoretische Standardnormal-Quantile", 
-ylab = "empirische Quantile")
+       ylab = "empirische Quantile")
 qqline(w)
 
 qqnorm(x, main = "Normal Q-Q-Plot der Stichprobe x", xlab = "theoretische Standardnormal-Quantile", 
-ylab = "empirische Quantile")
+       ylab = "empirische Quantile")
 qqline(x)
 
 qqnorm(y, main = "Normal Q-Q-Plot der Stichprobe y", xlab = "theoretische Standardnormal-Quantile", 
-ylab = "empirische Quantile")
+       ylab = "empirische Quantile")
 qqline(y)
 
 qqnorm(z, main = "Normal Q-Q-Plot der Stichprobe z", xlab = "theoretische Standardnormal-Quantile", 
-ylab = "empirische Quantile")
+       ylab = "empirische Quantile")
 qqline(z)
+
 ```
