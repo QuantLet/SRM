@@ -6,7 +6,7 @@
 
 ```yaml
 
-Name of Quantlet : SRMfig5.5
+Name of Quantlet : SRM_fig5.5
 
 Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
