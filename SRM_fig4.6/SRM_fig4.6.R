@@ -1,30 +1,15 @@
-# ------------------------------------------------------------------------------
-# Project:     SRM - Stochastische Risikomodellierung und statistische Methoden
-# ------------------------------------------------------------------------------
-# Quantlet:    SRM_fig4.6
-# ------------------------------------------------------------------------------
-# Description: Plots and compares the confidence intervals for relative
-#              likelihood and relative log-likelihood functions.
-# ------------------------------------------------------------------------------
-# Keywords:    confidence-interval, likelihood, function, plot,
-#              visualization, graphical representation
-# ------------------------------------------------------------------------------
-# See also:
-# ------------------------------------------------------------------------------
-# Author:      Sandor
-# ------------------------------------------------------------------------------
 
 ## clear history
 rm(list = ls(all = TRUE))
 graphics.off()
 
-## Konfidentintervalle mit dem LQT
+## Konfidenzintervalle mit dem LQT
 y      = 4                             # 4 treffer bei 50 Beobachtungen
 n      = 50
 p_Dach = y/n                           # ML-Schaetzer fur Binomialverteilung
 
 ## Funktionen
-L = function(p) p^y * (1 - p)^(n - y)  #Likelihood
+L  = function(p) p^y * (1 - p)^(n - y) #Likelihood
 LR = function(p) L(p)/L(p_Dach)        #Relative Likelihood
 
 par(mfrow = c(1, 2))
@@ -62,4 +47,3 @@ segments(0.025, -1, 0.025, c1, lwd = 2, lty = 2)  #Vertikale 1 zu c1
 segments(0.175, -1, 0.175, c1, lwd = 2, lty = 2)  #Vertikale 2 zu c1
 text(0.15, c2 + 0.6, expression(1 - alpha == 0.9))
 text(0.16, c1 + 0.6, expression(1 - alpha == 0.95))
-

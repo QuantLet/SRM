@@ -1,7 +1,7 @@
 
-Name of QuantLet : SRM_fig4.6
+Name of Quantlet : SRM_fig4.6
 
-Published in : SRM
+Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
 Description : 'Plots and compares the confidence intervals for relative
 likelihood and relative log-likelihood functions.'
@@ -11,12 +11,9 @@ visualization, graphical representation'
 
 See also : 
 
-Author : Sandor
+Author : Viktor Sandor
 
 Submitted :
 
-Datafile : 
-
-Example :
-- 'Plots the confidence intervals for relative likelihood and relative
+Example : 'Plots the confidence intervals for relative likelihood and relative
 log-likelihood functions.'

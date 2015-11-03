@@ -6,9 +6,9 @@
 
 ```yaml
 
-Name of QuantLet : SRM_fig4.6
+Name of Quantlet : SRM_fig4.6
 
-Published in : SRM
+Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
 Description : 'Plots and compares the confidence intervals for relative
 likelihood and relative log-likelihood functions.'
@@ -18,32 +18,32 @@ visualization, graphical representation'
 
 See also : 
 
-Author : Sandor
+Author : Viktor Sandor
 
 Submitted :
 
-Datafile : 
-
-Example :
-- 'Plots the confidence intervals for relative likelihood and relative
+Example : 'Plots the confidence intervals for relative likelihood and relative
 log-likelihood functions.'
 
 ```
 
+
 ![Picture1](SRM_fig4.6.png)
 
+
 ```R
+
 ## clear history
 rm(list = ls(all = TRUE))
 graphics.off()
 
-## Konfidentintervalle mit dem LQT
+## Konfidenzintervalle mit dem LQT
 y      = 4                             # 4 treffer bei 50 Beobachtungen
 n      = 50
 p_Dach = y/n                           # ML-Schaetzer fur Binomialverteilung
 
 ## Funktionen
-L = function(p) p^y * (1 - p)^(n - y)  #Likelihood
+L  = function(p) p^y * (1 - p)^(n - y) #Likelihood
 LR = function(p) L(p)/L(p_Dach)        #Relative Likelihood
 
 par(mfrow = c(1, 2))
@@ -66,9 +66,9 @@ text(0.16, c1 + 0.04, expression(1 - alpha == 0.95))
 ## Zeichne Relative Log-Likelihood
 LLR = function(p) -2 * log(LR(p), base = exp(1))
 curve(LLR, 0, 0.3, ylab = NA, xlab = expression(italic(theta1)), lwd = 2, 
-ylim = c(-1, 17))
+      ylim = c(-1, 17))
 mtext(expression(-2(italic(l)(theta1) - italic(l)(hat(theta1)))), side = 2, 
-line = 2)
+      line = 2)
 
 segments(0.08, -1, 0.08, 15, lty = 2, lwd = 2)    #Vertikale in p-Dach
 c1 = qchisq(0.95, 1)                              #c1=95% Quantil der Chi^2_1
