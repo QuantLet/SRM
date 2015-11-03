@@ -1,21 +1,17 @@
 
-Name of QuantLet : SRM_fig4.2
+Name of Quantlet : SRM_fig4.2
 
-Published in : SRM
+Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
 Description : 'Plots the power functions of t test, with
-fixed u= 2.3 and different significant levels.'
+fixed u = 2.3 and different significant levels.'
 
-Keywords : 't distribution, test, plot, student, Student,
-graphical representation'
+Keywords : t-distribution, test, plot, student, graphical representation
 
 See also : 
 
-Author : Sandor
+Author : Viktor Sandor
 
 Submitted :
 
-Datafile : 
-
-Example :
-- 'The power function of t test.'
+Example : The power function of t test.

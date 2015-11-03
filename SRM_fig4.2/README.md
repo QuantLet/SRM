@@ -6,30 +6,28 @@
 
 ```yaml
 
+Name of Quantlet : SRM_fig4.2
 
-Name of QuantLet : SRM_fig4.2
-
-Published in : SRM
+Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
 Description : 'Plots the power functions of t test, with
-fixed u= 2.3 and different significant levels.'
+fixed u = 2.3 and different significant levels.'
 
-Keywords : 't distribution, test, plot, student, Student,
-graphical representation'
+Keywords : t-distribution, test, plot, student, graphical representation
 
 See also : 
 
-Author : Sandor
+Author : Viktor Sandor
 
 Submitted :
 
-Datafile : 
+Example : The power function of t test.
 
-Example :
-- 'The power function of t test.'
 ```
 
+
 ![Picture1](SRM_fig4.2.png)
+
 
 ```R
 
@@ -48,18 +46,18 @@ Lambda    = function(mu) sqrt(WertN) * (mu - WertMu0)/WertSigma  #Erwartungswert
 
 ## Definition der Funktion G
 Fehler1 = function(mu) 1 - pt(U1, WertN - 1, Lambda(mu)) + 
-pt(-U1, WertN - 1, Lambda(mu))
+          pt(-U1, WertN - 1, Lambda(mu))
 
 ## Zeichnung von Funktion G
 curve(Fehler1, 1, 3.5, 
-ylab = expression(paste("Gutefunktion:  ", G(mu))), 
-xlab = expression(mu))
+      ylab = expression(paste("Gutefunktion:  ", G(mu))), 
+      xlab = expression(mu))
 
 ## Wie oben mit einem zweiten Signifikanzniveau
 Alpha2  = 0.1
 U2      = qt(1 - Alpha2/2, WertN - 1)
 Fehler2 = function(mu) 1 - (pt( U2, WertN - 1, Lambda(mu)) - 
-pt(-U2, WertN - 1, Lambda(mu)))
+                            pt(-U2, WertN - 1, Lambda(mu)))
 
 curve(Fehler2, 1, 3.5, add = TRUE, lty = 2)
 

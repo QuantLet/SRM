@@ -1,18 +1,3 @@
-# ------------------------------------------------------------------------------
-# Project:     SRM - Stochastische Risikomodellierung und statistische Methoden
-# ------------------------------------------------------------------------------
-# Quantlet:    SRM_fig4.2
-# ------------------------------------------------------------------------------
-# Description: Plots the power functions of t test, with fixed u= 2.3 and 
-#              different significant levels.
-# ------------------------------------------------------------------------------
-# Keywords:    t distribution, test, plot, student, Student,
-#              graphical representation
-# ------------------------------------------------------------------------------
-# See also:
-# ------------------------------------------------------------------------------
-# Author:      Sandor
-# ------------------------------------------------------------------------------
 
 ## clear history
 rm(list = ls(all = TRUE))
@@ -52,4 +37,3 @@ segments(0, 0.05, 2.3, 0.05)
 segments(0, 0.1, 2.3, 0.1, lty = 3) 
 text(1.25, 0.08, expression(paste("G(2,3)=", alpha)))
 title("Gutefunktion")
-
