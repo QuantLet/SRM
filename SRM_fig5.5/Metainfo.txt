@@ -3,15 +3,13 @@ Name of Quantlet : SRM_fig5.5
 
 Published in : SRM - Stochastische Risikomodellierung und statistische Methoden
 
-Description : 'Produces the plots of evaluating denisities of Archimedean copulae under (size=500, 
-size of parameters=3, dimension=2) and (size=500, size of parameters=6, dimension=2).'
+Description : 'Produces the plots of evaluating denisities of Archimedean copulae under (size=500, size of parameters=3, dimension=2) and (size=500, size of parameters=6, dimension=2).'
 
 Keywords : 'copula, plot, time-series, archimedean, density, visualization'
 
-See also : 
 
 Author : Torsten Becker
 
-Submitted :
+Submitted : 03.11.2015
 
 Example : Plots from the functions for evaluating densities of Archimedean copulae.
