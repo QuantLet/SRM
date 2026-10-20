@@ -9,17 +9,15 @@ Name of Quantlet: SRM_fig4.6
 
 Published in: SRM - Stochastische Risikomodellierung und statistische Methoden
 
-Description: Plots and compares the confidence intervals for relative
+Description: Plots and compares the confidence intervals for relative likelihood and relative log-likelihood functions.
 
-Keywords: confidence-interval, likelihood, function, plot,
-
-See also: 
+Keywords: confidence-interval, likelihood, function, plot, visualization, graphical representation
 
 Author: Viktor Sandor
 
-Submitted: 
+Submitted: 03.11.2015
 
-Example: Plots the confidence intervals for relative likelihood and relative
+Example: Plots the confidence intervals for relative likelihood and relative log-likelihood functions.
 
 ```
 <div align="center">
