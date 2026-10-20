@@ -9,17 +9,15 @@ Name of Quantlet: SRM_fig2.16
 
 Published in: SRM - Stochastische Risikomodellierung und statistische Methoden
 
-Description: Produces the QQ plots for simulated samples of standard normal
+Description: Produces the QQ plots for simulated samples of standard normal distribution and exponential distribution with sample size 100. QQ-plots compare empirical quantiles of a distribution with theoretical quantiles of the standard normal distribution .
 
-Keywords: qq-plot, simulation, normal, normal distribution, exponential, plot,
-
-See also: 
+Keywords: qq-plot, simulation, normal, normal distribution, exponential, plot, graphical representation
 
 Author: Ulrich Wellisch
 
-Submitted: 
+Submitted: 03.11.2015
 
-Example: Q-Q-Normal-Plots for simulated samples of standard normal distribution and
+Example: Q-Q-Normal-Plots for simulated samples of standard normal distribution and exponential distribution.
 
 ```
 <div align="center">
